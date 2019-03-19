@@ -1,0 +1,508 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.page {
+    
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.city,
+.emailDescription,
+.OneNumberDescription {
+    font-family: Exo 2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: normal;
+    color: #393939;
+}
+
+.citySelected,
+.emailSelected,
+.OneNumber {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+    color: #0E3884;
+}
+
+.menu {
+    height: 60px;
+    padding: 0px;
+}
+
+// .menu:after {
+//     background: #0E3884;
+//     bottom: 0;
+//     content: '';
+//     height: 100%;
+//     width: 100%;
+//     left: -10px;
+//     position: absolute;
+//     right: 0;
+//     transform: skewX(-20deg);
+//     z-index: -1;
+// }
+
+.menu li {
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transform: skewX(-20deg);
+    background: #0E3884;
+    border: 1px solid #0E3884;
+    outline: 1px solid #0E3884;
+}
+
+.menu li:hover {
+    background: #011843;
+}
+
+.menu li:active {
+    background: #E4E4E4;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+}
+
+.menu li a:active {
+    color: #0E3884;
+}
+
+.menu a {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0px;
+    height: 100%;
+    margin: auto;
+    transform: skewX(20deg);
+}
+
+.oneSection {
+    position: relative;
+}
+
+.oneSection h1 {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: normal;
+    color: #383B56;
+    opacity: 0.95;
+    margin-left: 40px;
+    margin-top: 165px;
+}
+
+.titleSection {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: normal;
+    color: #383B56;
+    opacity: 0.95;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.oneSection h1:before {
+    content: '';
+    height: 40px;
+    width: 20px;
+    background: #FF0000;
+    position: absolute;
+    left: 20px;
+    top: 173px;
+    transform: skewX(-20deg);
+}
+
+.titleSection:before {
+    content: '';
+    height: 40px;
+    width: 20px;
+    background: #FF0000;
+    position: absolute;
+    left: 20px;
+    top: 88px;
+    transform: skewX(-20deg);
+}
+
+.h1Description {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+    margin-left: 40px;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.blueBtn {
+    margin-left: 40px;
+    margin-top: 70px;
+    display: block;
+    height: 40px;
+    width: 170px;
+    background: #0E3884;
+    transform: skewX(-20deg);
+    position: relative;
+}
+
+.blueBtn span {
+    position: absolute;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transform: skewX(20deg);
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+.blueBtn span:hover {
+    color: #0E3884;
+    z-index: 1;
+}
+
+.blueBtn:hover {
+    background: white;
+    outline: 2px solid #0000005c;
+}
+
+.blueBtn:active {
+    background: #EAEAEA;
+    outline: 2px solid #0000005c;
+}
+
+.OneSectionImg {
+    position: absolute;
+    left: -232px;
+    top: 65px;
+    z-index: -1;
+}
+
+.twoSection {
+    margin-top: 170px;
+    height: 600px;
+    background: #F9F9F9;
+}
+
+.twoSection .slick-list {
+    height: 400px;
+    padding-top: 110px!important;
+}
+
+.slick-dots li button::before {
+    width: 12px!important;
+    height: 12px!important;
+    border: 0.5px solid #001F58;
+    border-radius: 12px;
+    content: ""!important;
+}
+
+.slick-dots li.slick-active button::after {
+    border-radius: 12px;
+    content: "" !important;
+    background: #001F58 !important;
+    font-size: 12px;
+    padding: 0px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.nextar img {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 6px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prevar img {
+    position: absolute;
+    bottom: 0px;
+    margin-left: -110px;
+    transform: rotate(180deg);
+    margin-bottom: -15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.blockSlider {
+    position: relative;
+    width: 330px!important;
+    height: 135px;
+    background: #0E3884;
+    transform: skewX(-20deg);
+}
+
+.blockSliderImg {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    transform: skewX(20deg);
+}
+
+.blockSlider span {
+    font-family: 'EXO 2';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: normal;
+    color: #FFFFFF;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    transform: skewX(20deg);
+    text-align: left;
+}
+
+.blockSlider p {
+    font-family: 'EXO 2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6px;
+    line-height: normal;
+    color: #FFFFFF;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    transform: skewX(20deg);
+    text-align: left;
+}
+
+.blockSlider a {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: normal;
+    color: #FFFFFF;
+    position: absolute;
+    left: 45px;
+    bottom: 20px;
+    transform: skewX(20deg);
+    cursor: pointer;
+}
+
+.blockSlider a:after {
+    content: url(%=static=%/content/lpArrows.png);
+    padding-left: 10px;
+}
+
+.blockSlider a:hover:after {
+    content: url(%=static=%/content/lpArrowsHover.png);
+    padding-left: 10px;
+}
+
+.blockSlider a:hover {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.twoSection .slick-current {
+    transform: scale(1.5)!important;
+    transition: 1s;
+}
+
+.twoSection .slick-active {
+    transform: scale(1);
+    transition: 1s;
+}
+
+.newsBlockSlider {
+    width: 330px!important;
+    height: 260px;
+    box-shadow: 0 0 10px #eaeaea;
+}
+
+.newsSlider .slick-list {
+    height: 350px;
+    padding-top: 80px;
+}
+
+.newsSlider .slick-dots{
+    position: absolute;
+    top: 20px;
+    left: -474px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 0px;
+}
+
+.newsSlider .prevar img {
+    position: absolute;
+    top: 28px;
+    left: 140px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.newsSlider .nextar img {
+    position: absolute;
+    top: 23px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.newsSlider span {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+    color: #0E3884;
+    display: block;
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 37px;
+}
+
+.newsSlider time {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: normal;
+    color: #000000;
+    opacity: 0.4;
+    display: block;
+    text-align: left;
+    margin-left: 37px;
+    margin-top: 5px;
+}
+
+.newsSlider p {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+    color: #000000;
+    opacity: 0.6;
+    text-align: left;
+    margin-left: 37px;
+    margin-top: 10px;
+}
+
+.fourSection {
+    height: 670px;
+    background: #F9F9F9;
+}
+
+.titleSectionDescription {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+    color: #383B56;
+    margin-left: 40px;
+}
+
+.fourSection .advantage {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+    color: #383B56;
+    margin-top: 70px;
+}
+
+.advantageBlock .icon {
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+.advantageBlock .title {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: normal;
+    color: #383B56;
+}
+
+
+.advantageBlock .description {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #383B56;
+}
+
+.advantageBlock .moduleBlock1:before {
+    content: url(%=static=%/content/icon1Before.png);
+    position: absolute;
+}
+
+.advantageBlock .moduleBlock2:before {
+    content: url(%=static=%/content/icon2Before.png);
+    position: absolute;
+}
+
+.advantageBlock .moduleBlock3:before {
+    content: url(%=static=%/content/icon3Before.png);
+    position: absolute;
+}
+
+.advantageBlock .moduleBlock4:before {
+    content: url(%=static=%/content/icon4Before.png);
+    position: absolute;
+}
+
+.advantageBlock .moduleBlock5:before {
+    content: url(%=static=%/content/icon5Before.png);
+    position: absolute;
+}
+
+.advantageBlock .moduleBlock6:before {
+    content: url(%=static=%/content/icon6Before.png);
+    position: absolute;
+}
