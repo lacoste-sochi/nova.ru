@@ -58,4 +58,26 @@ $(document).ready(function() {
         ]
       });
 
+      $('.centerSlider').click(function(event) {
+      
+        // console.log($('.centerSlider .slick-current').next());
+
+        // console.log($(event.target).closest('.slick-slide'));
+
+         if ( $('.centerSlider .slick-current').next().text() === $(event.target).closest('.slick-slide').text() ) {
+
+          $('.centerSlider').slick('slickNext');
+
+         } else if ( $('.centerSlider .slick-current').prev().text() == $(event.target).closest('.slick-slide').text() ) {
+
+          $('.centerSlider').slick('slickPrev');
+
+         }
+        
+        
+
+
+      });
+
+
 });
