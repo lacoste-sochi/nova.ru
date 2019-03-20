@@ -10,7 +10,7 @@
 
         <section class="header">
         <div class="container">
-            <div class="row">
+            <div class="row contacts">
                 <div class="col-2">
                     <span class="city">Ваш город</span>&nbsp;
                     <span class="citySelected">Чита</span>
@@ -25,27 +25,37 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-2 d-flex align-items-center">
+                <div class="col-4 col-md-2 d-flex align-items-center">
                     <img src="%=static=%img/content/logo.png" alt="logo">
                 </div>
-                <div class="col-10 menu">
-                    <ul class="navbar-nav bd-navbar-nav flex-row h-100 d-flex justify-content-around">
-                        <li><a href="/">ГЛАВНАЯ</a></li>
-                        <li><a href="/">КАТАЛОГ</a></li>
-                        <li><a href="/">НОВОСТИ</a></li>
-                        <li><a href="/">ПАРТНЕРАМ</a></li>
-                        <li><a href="/">О НАС</a></li>
-                        <li><a href="/">КОНТАКТЫ</a></li>
+                <div class="col-8 col-md-10 menu">
+                    <img class="iconMenu ml-auto mt-4 mr-3" src="%=static=%img/content/iconMenu.png" alt="Иконка меню">
+                    <ul class="flex-row h-100 d-flex justify-content-around menuDesktop">
+                        <li><a href="#">ГЛАВНАЯ</a></li>
+                        <li><a href="#catalog">КАТАЛОГ</a></li>
+                        <li><a href="#news">НОВОСТИ</a></li>
+                        <li><a href="#partners">ПАРТНЕРАМ</a></li>
+                        <li><a href="#about">О НАС</a></li>
+                        <li><a href="#contacts">КОНТАКТЫ</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <ul class="menuMobile">
+            <img class="iconClose ml-auto mt-3 mr-4" src="%=static=%img/content/iconClose.png" alt="Иконка - закрыть меню">
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#catalog">КАТАЛОГ</a></li>
+                <li><a href="#news">НОВОСТИ</a></li>
+                <li><a href="#partners">ПАРТНЕРАМ</a></li>
+                <li><a href="#about">О НАС</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
         </section>
 
-        <section class="oneSection">
+        <section class="oneSection" id="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 text-centr text-md-left">
                             <h1>СТРОИТЕЛЬНЫЕ И УНИВЕРСАЛЬНЫЕ ЛЕСТНИЦЫ</h1>
                             <p class="h1Description">Компания NOVA, производитель универсальных лестниц и стремянок из<br>
                                 алюминия, приглашает к сотрудничеству торговые предприятия.</p>
@@ -59,7 +69,7 @@
 
         </section>
 
-        <section class="twoSection">
+        <section class="twoSection" id="catalog">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -130,7 +140,7 @@
             </div>
         </section>
 
-        <section class="threeSection">
+        <section class="threeSection" id="news">
             <div class="container">
                 <div class="row">
                      <div class="col-12">
@@ -184,7 +194,7 @@
             </div>
         </section>
 
-        <section class="fourSection">
+        <section class="fourSection" id="partners">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -247,7 +257,7 @@
                 </div>
         </section>
 
-        <section class="fiveSection">
+        <section class="fiveSection" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -291,7 +301,7 @@
             </div>
         </section>
 
-        <section class="sixSection mb-5">
+        <section class="sixSection mb-5" id="contacts">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
