@@ -122,7 +122,6 @@ html, body {
     line-height: normal;
     color: #383B56;
     opacity: 0.95;
-    margin-left: 40px;
     margin-top: 80px;
 }
 
@@ -131,20 +130,20 @@ html, body {
     height: 40px;
     width: 20px;
     background: #FF0000;
-    position: absolute;
-    left: 20px;
-    top: 173px;
+    position: static;
+    display: inline-block;
+    margin-right: 20px;
     transform: skewX(-20deg);
 }
 
 .titleSection:before {
     content: '';
-    height: 40px;
+    height: 37px;
     width: 20px;
     background: #FF0000;
-    position: absolute;
-    left: 20px;
-    top: 88px;
+    position: static;
+    display: inline-block;
+    margin-right: 20px;
     transform: skewX(-20deg);
 }
 
@@ -656,14 +655,16 @@ html, body {
             color: #383B56;
             opacity: 0.95;
             margin-top: 30px;
+            position: relative;
         }
 
         .oneSection h1:before {
-            position: absolute;
-            width: 16px;
+            position: static;
+            display: inline-block;
+            width: 10px;
             height: 21px;
-            left: 90px;
-            top: 108px;
+            margin: 0px 10px;
+            top: 5px;
             background: #FF0000;
         }
 
