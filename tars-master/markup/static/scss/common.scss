@@ -70,6 +70,7 @@ color: #343434;
     font-size: 12px;
     line-height: normal;
     color: #393939;
+    border-bottom: 1px solid #0000001c;
 }
 
 .citySelected,
@@ -336,7 +337,7 @@ color: #343434;
     font-family: 'EXO 2';
     font-style: normal;
     font-weight: normal;
-    font-size: 6px;
+    font-size: 8px;
     line-height: normal;
     color: #FFFFFF;
     position: absolute;
@@ -389,7 +390,7 @@ color: #343434;
 }
 
 .newsBlockSlider {
-    width: 330px!important;
+    max-width: 330px!important;
     height: 260px;
     box-shadow: 0 0 10px #eaeaea;
 }
@@ -664,132 +665,198 @@ background {
     z-index: -1;
     }
 
+    .newsSlider .slick-dots {
+        position: absolute;
+        top: inherit;
+        left: inherit;
+        padding-bottom: 70px;
+        margin: 0;
+        width: 100%;
+        height: 0px;
     }
 
-    @media screen and (max-width: 800px) {
-
-        .contacts {
+    .nextar img,
+    .prevar img {
         display: none;
-        }
+    }
 
-        .menuDesktop {
-            display: none!important;
-        }
+    }
 
-        .iconMenu,
-        .iconClose {
-            display: block;
-        }
+@media screen and (max-width: 800px) {
 
-        .menuMobile {
-            position: absolute;
-            top: 0px;
-            height: 200px;
-            width: 100%;
-            background: #0E3884;
-            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
-            list-style: none;
-            z-index: 10;
-        }
+    .contacts {
+    display: none;
+    }
 
-        .menuMobile li a {
-            font-family: "Exo 2";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 10px;
-            line-height: normal;
-            color: white;
-            cursor: pointer;
-        }
+    .menuDesktop {
+        display: none!important;
+    }
 
-        .menuMobile li {
-            border-bottom: 0.3px solid #fffffffa;
-        }
+    .iconMenu,
+    .iconClose {
+        display: block;
+    }
 
-        .oneSection h1 {
-            font-family: Bebas Neue;
-            font-size: 28px;
-            line-height: normal;
-            text-align: center;
-            text-transform: uppercase;
-            color: #383B56;
-            opacity: 0.95;
-            margin-top: 30px;
-            position: relative;
-            margin-left: 0px;
-        }
+    .menuMobile {
+        position: absolute;
+        top: 0px;
+        height: 240px;
+        width: 100%;
+        background: #0E3884;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+        list-style: none;
+        z-index: 10;
+    }
 
-        .oneSection h1:before {
+    .menuMobile li a {
+        font-family: "Exo 2";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: normal;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menuMobile li {
+        border-bottom: 0.3px solid #fffffffa;
+    }
+
+    .oneSection h1 {
+        font-family: Bebas Neue;
+        font-size: 28px;
+        line-height: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #383B56;
+        opacity: 0.95;
+        margin-top: 30px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .oneSection h1:before {
+        position: static;
+        display: inline-block;
+        width: 10px;
+        height: 21px;
+        margin: 0px 10px;
+        top: 5px;
+        background: #FF0000;
+    }
+
+    .h1Description {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .blueBtn {
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .twoSection .slick-current {
+        transform: scale(1.1) !important;
+        transition: 1s;
+    }
+
+    .blockSlider {
+        position: relative;
+        width: 260px !important;
+        height: 135px;
+        transform: skewX(-20deg);
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 10px;
+        list-style: none;
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 0px;
+    }
+
+    .nextar img {
+        position: absolute;
+        top: 14px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .prevar img {
+        position: absolute;
+        top: 22px;
+        transform: rotate(180deg);
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .twoSection {
+        height: 480px;
+    }
+
+    .newsBlockSlider {
+        margin-top: 10px;
+    }
+
+    .modal-lg {
+        max-width: 100% !important;
+    }
+
+    .blockSliderImg {
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg);
+        width: 100px;
+    }
+
+    .blockSlider p {
+        font-size: 8px;
+        margin-right: 80px;
+        margin-top: -5px;
+    }
+
+    .blockSlider p br {
+        display: none;
+    }
+
+
+    }
+
+    @media screen and (max-width: 320px) {
+
+        .titleSection:before {
+            content: '';
+            height: 30px;
+            width: 20px;
+            background: #FF0000;
             position: static;
             display: inline-block;
-            width: 10px;
-            height: 21px;
-            margin: 0px 10px;
-            top: 5px;
-            background: #FF0000;
-        }
-
-        .h1Description {
-            margin-left: 0px;
-            text-align: center;
-        }
-
-        .blueBtn {
-            margin: auto;
-            margin-top: 30px;
-        }
-
-        .twoSection .slick-current {
-            transform: scale(1.1) !important;
-            transition: 1s;
-        }
-
-        .blockSlider {
-            position: relative;
-            width: 260px !important;
-            height: 135px;
+            margin-right: 20px;
+            -webkit-transform: skewX(-20deg);
             transform: skewX(-20deg);
         }
 
-        .slick-dots {
-            position: absolute;
-            top: 10px;
-            list-style: none;
-            display: block;
-            text-align: center;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height: 0px;
+        .titleSection {
+            font-family: "Bebas Neue";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: normal;
+            color: #383B56;
+            opacity: 0.95;
+            margin-top: 80px;
         }
 
-        .nextar img {
-            position: absolute;
-            top: 15px;
-            right: 73px;
-            cursor: pointer;
-            z-index: 1;
+        .advantageBlock .icon {
+            margin-bottom: 50px;
+            margin-right: 0px;
+            padding-right: 10px;
         }
 
-        .prevar img {
-            position: absolute;
-            top: 19px;
-            transform: rotate(180deg);
-            cursor: pointer;
-            z-index: 1;
-        }
-
-        .twoSection {
-            height: 480px;
-        }
-
-        .newsBlockSlider {
-            margin-top: 10px;
-        }
-
-        .modal-lg {
-            max-width: 100% !important;
-        }
-
-
-        }
+    }

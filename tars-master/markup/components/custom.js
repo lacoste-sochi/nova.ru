@@ -24,7 +24,7 @@ $(document).ready(function() {
               arrows: true,
               dots: true,
               centerMode: true,
-              centerPadding: '10px',
+              centerPadding: '0px',
               slidesToShow: 1
             }
           }
@@ -42,7 +42,8 @@ $(document).ready(function() {
           {
             breakpoint: 1360,
             settings: {
-              arrows: false,
+              arrows: true,
+              dots: true,
               centerMode: true,
               centerPadding: '0px',
               slidesToShow: 2.,
@@ -51,7 +52,8 @@ $(document).ready(function() {
           {
             breakpoint: 800,
             settings: {
-              arrows: false,
+              arrows: true,
+              dots: true,
               centerMode: true,
               centerPadding: '10px',
               slidesToShow: 1
